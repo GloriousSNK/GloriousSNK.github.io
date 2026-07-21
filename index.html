@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sriman Narayan Kandi</title>
+<style>
+  :root {
+    color-scheme: light;
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #5c5c5c;
+    --line: #e5e5e5;
+    --link: #1f6feb;
+    --card: #fafafa;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    font-size: 17px;
+  }
+  main {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 72px 24px 96px;
+  }
+  h1 {
+    font-size: 2rem;
+    margin: 0 0 4px;
+    letter-spacing: -0.02em;
+  }
+  .tagline {
+    color: var(--muted);
+    margin: 0 0 4px;
+  }
+  .affil {
+    color: var(--muted);
+    font-size: 0.95rem;
+    margin: 0 0 32px;
+  }
+  h2 {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+    margin: 40px 0 12px;
+  }
+  p { margin: 0 0 16px; }
+  a { color: var(--link); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .links a {
+    display: inline-block;
+    padding: 8px 16px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: var(--card);
+    color: var(--fg);
+  }
+  .links a:hover {
+    border-color: var(--link);
+    text-decoration: none;
+  }
+  footer {
+    margin-top: 56px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>Sriman Narayan Kandi</h1>
+  <p class="tagline">Student &middot; machine learning and dynamical systems</p>
+  <!-- EDIT: set this to your actual school if different -->
+  <p class="affil">Rickards High School</p>
+
+  <h2>About</h2>
+  <p>
+    I'm a high school student, and most of what I do is machine learning. Right now
+    I'm into chaotic systems. I built a benchmark that compares how different models
+    forecast things like the pendulum and the Lorenz attractor, and I spend most of
+    the time checking whether the way we score those models actually holds up. A lot
+    of the time it doesn't, which is the part I like.
+  </p>
+  <p>
+    I also made TopSpin Labs, a tool that uses video and a physics simulation of the
+    ball to give tennis players feedback from their own match footage. I play
+    varsity tennis, so it started as something I wanted for myself.
+  </p>
+
+  <h2>Links</h2>
+  <ul class="links">
+    <li><a href="https://github.com/GloriousSNK">GitHub</a></li>
+    <li><a href="https://www.linkedin.com/in/sriman-narayan-kandi-53809a412">LinkedIn</a></li>
+    <!-- EDIT: replace with the email you register on OpenReview with -->
+    <li><a href="mailto:add-your-email@here.com">Email</a></li>
+  </ul>
+
+  <footer>
+    &copy; <span id="y"></span> Sriman Narayan Kandi
+  </footer>
+</main>
+<script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+</body>
+</html>
